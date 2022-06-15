@@ -1,20 +1,120 @@
-#header {
-    background-color: rgb(223, 121, 164);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: floralwhite;
+}
+
+#header {}
+
+.header-img__container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-title {
+    padding-top: 40px;
+    text-align: center;
+}
+
+#header-img {
+    height: 200px;
 }
 
 #nav-bar {
     position: fixed;
     top: 0px;
+    background-color: #e9967a;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 1800px;
+    width: 100%;
+    padding: 10px 0px;
 }
 
 .nav-link {
-    display: flex;
     text-decoration: none;
     color: white;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: bold;
-    margin-left: 700px;
+    margin: 0 5px;
+}
+
+.nav-line {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.main__title {
+    padding: 10px 0;
+    text-align: center;  
+}
+
+#video {
+    display: none;
+}
+
+.video__container {
+    display: flex;
+    justify-content: center;
+    background-color: #e9d7d2;
+    padding: 15px 0px;
+}
+
+.cards__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1800px;
+    padding: 0 25%;
     margin-top: 30px;
+}
+
+.email__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1800px;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.email__text {
+    width: 50%;
+    text-align: center;
+}
+
+#email {
+    border-radius: 20px;
+    background-color: #e3bebf;
+    color: #74455d;
+    font-size: 15px;
+    font-family: var(--subheadline-font-family);
+    margin-top: 20px;
+    padding: 8px 0;
+    border: 0;
+    padding-left: 20px;
+}
+
+#submit {
+    background-color: #e9967a;
+    color: #fff;
+    font-size: 15px;
+    font-family: var(--subheadline-font-family);
+    margin-top: 20px;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--subheadline-font-family);
+    border-radius: 25px;
+    border: 0;
 }
 
 @media only screen and (max-width: 800px) {

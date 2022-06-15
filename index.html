@@ -2,31 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunglasses shop</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <header id="header">
-        <h1>Схематичне використання тегів із завдання</h1>
-        <nav id="nav-bar">
-            <a href="#header" class="nav-link">header|</a>
-            <a href="#main" class="nav-link">main|</a>
-            <a href="#footer" class="nav-link">footer</a>
-        </nav>
-        <img id="header-img" src="https://i.imgur.com/vqKI4ye.jpg" alt="pink_bckgr">
-    </header>
-    <main id="main">
-        <img id="header-img" src="https://i.imgur.com/tEwkUeO.gif" alt="coding_cat">
-        <video id="video" src=""></video>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input id="email" placeholder="email" type="email" name="email"> <input id="submit" type="submit">
-        </form>
-    </main>
-    <footer id="footer"><img id="header-img" src="https://i.imgur.com/vqKI4ye.jpg" alt="pink_bckgr"></footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <header id="header">
+    <h1 class="header-title">Sunglasses shop</h1>
+    <nav id="nav-bar">
+      <a href="#header" class="nav-link">header</a>
+      <p class="nav-line">|</p>
+      <a href="#main" class="nav-link">main</a>
+      <p class="nav-line">|</p>
+      <a href="#footer" class="nav-link">footer</a>
+    </nav>
+    <div class="header-img__container"><img id="header-img" src="./img/header_img.jpg" alt="Cat in glasses"></div>
+  </header>
+  <main id="main">
+    <h2 class="main__title">Watch our promo video!</h2>
+    <div class="video__container"><video id="video" src=""></video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mIMicrmVkpI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="cards__container">
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/card-img-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Stylish black oval glasses</h5>
+              <p class="card-text">Sunglasses like the one Kim Kardashian has.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/card-img-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Spyware oval pink glasses</h5>
+              <p class="card-text">Sunglasses that remind you about childhood.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/card-img-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fashonable black oblong glasses</h5>
+              <p class="card-text">Sunglasses as super as Superman.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="email__container">
+      <h2 class="email__text">For more models of sunglasses write your email and we'll send you the catalogue.</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" placeholder="email" type="email" name="email"> <input value="more glasses" id="submit" type="submit">
+      </form>
+    </div>
+  </main>
+  <footer id="footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
